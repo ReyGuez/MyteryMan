@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>MysteryMan</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>localhost</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>The Camera is required to record video about experience user.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>The Location is used at the time of recording the start and end of the workday.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>The Location is used at the time of recording the start and end of the workday.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>The Microphone is used to help to record registration videos.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>The Photo library is used to capture the ticket or invoice when uploading an expense.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>The Photo library is used to capture the ticket or invoice when uploading an expense.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ArchivoBlack-Regular.ttf</string>
+		<string>Montserrat-Black.ttf</string>
+		<string>Montserrat-BlackItalic.ttf</string>
+		<string>Montserrat-Bold.ttf</string>
+		<string>Montserrat-BoldItalic.ttf</string>
+		<string>Montserrat-ExtraBold.ttf</string>
+		<string>Montserrat-ExtraBoldItalic.ttf</string>
+		<string>Montserrat-ExtraLight.ttf</string>
+		<string>Montserrat-ExtraLightItalic.ttf</string>
+		<string>Montserrat-Italic.ttf</string>
+		<string>Montserrat-Light.ttf</string>
+		<string>Montserrat-LightItalic.ttf</string>
+		<string>Montserrat-Medium.ttf</string>
+		<string>Montserrat-MediumItalic.ttf</string>
+		<string>Montserrat-Regular.ttf</string>
+		<string>Montserrat-SemiBold.ttf</string>
+		<string>Montserrat-SemiBoldItalic.ttf</string>
+		<string>Montserrat-Thin.ttf</string>
+		<string>Montserrat-ThinItalic.ttf</string>
+		<string>Raleway-Black.ttf</string>
+		<string>Raleway-BlackItalic.ttf</string>
+		<string>Raleway-Bold.ttf</string>
+		<string>Raleway-BoldItalic.ttf</string>
+		<string>Raleway-ExtraBold.ttf</string>
+		<string>Raleway-ExtraBoldItalic.ttf</string>
+		<string>Raleway-ExtraLight.ttf</string>
+		<string>Raleway-ExtraLightItalic.ttf</string>
+		<string>Raleway-Italic.ttf</string>
+		<string>Raleway-Light.ttf</string>
+		<string>Raleway-LightItalic.ttf</string>
+		<string>Raleway-Medium.ttf</string>
+		<string>Raleway-MediumItalic.ttf</string>
+		<string>Raleway-Regular.ttf</string>
+		<string>Raleway-SemiBold.ttf</string>
+		<string>Raleway-SemiBoldItalic.ttf</string>
+		<string>Raleway-Thin.ttf</string>
+		<string>Raleway-ThinItalic.ttf</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

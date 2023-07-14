@@ -1,0 +1,153 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/ArchivoBlack-Regular.ttf",
+      "sha1": "5b6c44432da2e1330ad30153eddf98c739013b88"
+    },
+    {
+      "path": "assets/fonts/Montserrat-Black.ttf",
+      "sha1": "fca130f21601346cce37bb8a9526ff01af66d912"
+    },
+    {
+      "path": "assets/fonts/Montserrat-BlackItalic.ttf",
+      "sha1": "50ca0660179c28c31ef1debc55506a1eab366446"
+    },
+    {
+      "path": "assets/fonts/Montserrat-Bold.ttf",
+      "sha1": "04052dc3b846609216de1e0cbcec337c6b6e74f6"
+    },
+    {
+      "path": "assets/fonts/Montserrat-BoldItalic.ttf",
+      "sha1": "ed5e533b6571e33adb6d01298cb8d1a5a2466657"
+    },
+    {
+      "path": "assets/fonts/Montserrat-ExtraBold.ttf",
+      "sha1": "1914bc1981e6ceceadb2f6d72455b4e89e04965c"
+    },
+    {
+      "path": "assets/fonts/Montserrat-ExtraBoldItalic.ttf",
+      "sha1": "49758a0ea59fe7f82c639a385a2bacf3d4de3398"
+    },
+    {
+      "path": "assets/fonts/Montserrat-ExtraLight.ttf",
+      "sha1": "7c594b126941460bd2f3b47097fd6222f52277e7"
+    },
+    {
+      "path": "assets/fonts/Montserrat-ExtraLightItalic.ttf",
+      "sha1": "fbbb972b616c3b84d99976ddf84b6fecdeb4c7ca"
+    },
+    {
+      "path": "assets/fonts/Montserrat-Italic.ttf",
+      "sha1": "4ee8f07c7414009645d03d87cd72df15658fe9f4"
+    },
+    {
+      "path": "assets/fonts/Montserrat-Light.ttf",
+      "sha1": "6f21894a80049259ef71fcba135218695b41b67a"
+    },
+    {
+      "path": "assets/fonts/Montserrat-LightItalic.ttf",
+      "sha1": "8e980f76a35675acd586f829dd2ae8d002dd97d6"
+    },
+    {
+      "path": "assets/fonts/Montserrat-Medium.ttf",
+      "sha1": "6b57d12e018c64352e202f8ef3bf7f431f76d935"
+    },
+    {
+      "path": "assets/fonts/Montserrat-MediumItalic.ttf",
+      "sha1": "8b2c464e42f07fc307fddb9c58d202ecff19be2a"
+    },
+    {
+      "path": "assets/fonts/Montserrat-Regular.ttf",
+      "sha1": "de57aa03e4821fdbe6c34ec2c895e8b5c914e837"
+    },
+    {
+      "path": "assets/fonts/Montserrat-SemiBold.ttf",
+      "sha1": "8580dec824bbdb6ce24d04d3aaf360776339f0a7"
+    },
+    {
+      "path": "assets/fonts/Montserrat-SemiBoldItalic.ttf",
+      "sha1": "51626902f9f2b0aa24b235bb68b2640622f156b9"
+    },
+    {
+      "path": "assets/fonts/Montserrat-Thin.ttf",
+      "sha1": "8c871991960f520a31635f95be6c346b659e2c8c"
+    },
+    {
+      "path": "assets/fonts/Montserrat-ThinItalic.ttf",
+      "sha1": "f7d887fc6b50157081fd60082d20339c433f9955"
+    },
+    {
+      "path": "assets/fonts/Raleway-Black.ttf",
+      "sha1": "b341b185db9c7231884558dcdab0124d2f5ed1d0"
+    },
+    {
+      "path": "assets/fonts/Raleway-BlackItalic.ttf",
+      "sha1": "d021c84b73c2fc4e094c8b69d77933a396f12d77"
+    },
+    {
+      "path": "assets/fonts/Raleway-Bold.ttf",
+      "sha1": "fd799b6fb4aff1a9402e071ab02d1ddea731b868"
+    },
+    {
+      "path": "assets/fonts/Raleway-BoldItalic.ttf",
+      "sha1": "5776ec23bc3f3c0de10fcfcaa32ae5c8dd848b37"
+    },
+    {
+      "path": "assets/fonts/Raleway-ExtraBold.ttf",
+      "sha1": "1c92715c134738f2956bf758181522243c7586dd"
+    },
+    {
+      "path": "assets/fonts/Raleway-ExtraBoldItalic.ttf",
+      "sha1": "445484ad20dc9d2b026a6c6c31bf1595f354e7b9"
+    },
+    {
+      "path": "assets/fonts/Raleway-ExtraLight.ttf",
+      "sha1": "ebf8d86a564280184a6058fc0f0cc9569e83ce91"
+    },
+    {
+      "path": "assets/fonts/Raleway-ExtraLightItalic.ttf",
+      "sha1": "129009d8ec8e566ea04b71086cb2fd572347e964"
+    },
+    {
+      "path": "assets/fonts/Raleway-Italic.ttf",
+      "sha1": "acbf4a7df226ed1991f9b8dc5b8ea31f92f19ab7"
+    },
+    {
+      "path": "assets/fonts/Raleway-Light.ttf",
+      "sha1": "c66216ca77ce237387bb324c3cee39cf4aeefbf4"
+    },
+    {
+      "path": "assets/fonts/Raleway-LightItalic.ttf",
+      "sha1": "bb7683a683fde8bfca5a7996caa2b76ae7fc0fa4"
+    },
+    {
+      "path": "assets/fonts/Raleway-Medium.ttf",
+      "sha1": "9d35f805e98f95e72f5d0a4ced7397584d7349be"
+    },
+    {
+      "path": "assets/fonts/Raleway-MediumItalic.ttf",
+      "sha1": "bbb9dc0dc6145897e9b4a3b10f27fe92fcab7bac"
+    },
+    {
+      "path": "assets/fonts/Raleway-Regular.ttf",
+      "sha1": "c01aaff04ead4a08b89bcb81d3d3d954345eb67f"
+    },
+    {
+      "path": "assets/fonts/Raleway-SemiBold.ttf",
+      "sha1": "75f4fca0d4d80e2b9a62d3283261e933786fb8c1"
+    },
+    {
+      "path": "assets/fonts/Raleway-SemiBoldItalic.ttf",
+      "sha1": "4691e8eb595037e4eb553b479b92bc6c9c40b201"
+    },
+    {
+      "path": "assets/fonts/Raleway-Thin.ttf",
+      "sha1": "81adef0804f6b3d0aeb8f977f3ec61808bb3a274"
+    },
+    {
+      "path": "assets/fonts/Raleway-ThinItalic.ttf",
+      "sha1": "77ebdfe329e244ba373da81dd44aabaf526f5147"
+    }
+  ]
+}
