@@ -72,7 +72,7 @@ const VideoRecording: React.FC<VideoRecordingProps> = ({
       onRecordingFinished: video => {
         console.log('video', video);
         onGetPathVideo(video.path);
-        onSave(video.path);
+        // onSave(video.path);
       },
       onRecordingError: () => {},
     });

@@ -226,7 +226,8 @@ const Container = () => {
                 type: 'video/mp4',
                 uri: path,
               };
-              setFinalVideo(video);
+              videoProcess(video.uri);
+              // setFinalVideo(video);
             }}
             onBack={() => onAnimation(1, 1)}
           />
