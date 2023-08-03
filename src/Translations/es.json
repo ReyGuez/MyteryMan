@@ -6,5 +6,16 @@
   "cancel and repeat": "cancelar y repetir",
   "save testimony": "guardar testimonio",
   "end recording": "finalizar grabación",
-  "go back": "volver atrás"
+  "go back": "volver atrás",
+  "Choose you language": "Elige tu idioma",
+  "Italian": "Italiano",
+  "English": "Inglés",
+  "Spanish": "Español",
+  "Press “View Testimony” to view the testimony you just recorded.": "Pulsa “Ver testimonio” para ver el testimonio que acabas de grabar.",
+  "If you are satisfied with it, click on “Save testimony“ so that we can upload it to our website.": "Si estás conforme con él, pulsa en “Guardar testimonio” para que lo subamos a nuestra web.",
+  "If you don't like how it turned out, press “Cancel and repeat“ and try again :)": "Si no te gusta cómo ha quedado, pulsa “Cancelar y repetir” y vuelve a intentarlo :)",
+  "Your testimonial has been successfully saved!": "¡Tu testimonio se ha guardado con éxito!",
+  "Go to www.mysteryman.com/testimonials to see it and share it with your friends and family :)": "Entra en www.misteryman.com/testimonios para verlo y compartirlo con tus amigos y familiares :)",
+  "Preparing your video": "Preparando tu vídeo",
+  "Once finished we will tell you where you can see it.": "Una vez finalizado te indicaremos dónde puedes verlo."
 }

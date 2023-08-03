@@ -33,6 +33,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {useOrientation} from '../../Templates/Orientation.tsx';
 import {CameraRoll} from '@react-native-camera-roll/camera-roll';
 import SystemNavigationBar from 'react-native-system-navigation-bar';
+import LanguageScreen from '../LanguageScreen';
 
 const Container = () => {
   const {t} = useTranslation();
@@ -179,7 +180,7 @@ const Container = () => {
         uri: 'file://' + outputPath,
       };
       setFinalVideo(video);
-      await CameraRoll.save(outputPath, {type: 'video', album: 'Bewor'});
+      // await CameraRoll.save(outputPath, {type: 'video', album: 'Bewor'});
       return video;
     } catch (error) {
       console.log('Error al procesar', error);
@@ -198,7 +199,7 @@ const Container = () => {
             }}
             onCancelAndRepeat={() => {
               canceled.current = true;
-              onAnimation(1, 0);
+              onAnimation(1, 5);
               setCurrentPath('');
               RNFFmpeg.cancel();
             }}
@@ -247,12 +248,20 @@ const Container = () => {
             }}
           />
         );
-      default:
+      case 5:
         return (
           <Home
             onRecord={() => {
               canceled.current = false;
               onAnimation(1, 3);
+            }}
+          />
+        );
+      default:
+        return (
+          <LanguageScreen
+            onChooseLanguage={() => {
+              onAnimation(1, 5);
             }}
           />
         );

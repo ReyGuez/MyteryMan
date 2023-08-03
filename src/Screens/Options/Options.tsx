@@ -227,7 +227,13 @@ const Options: React.FC<OptionsProps> = ({
               textAlign: 'center',
             }}>
             {t(
-              `Pulsa “Ver testimonio” para ver el testimonio que acabas de grabar.${'\n'}Si estás conforme con él, pulsa en “Guardar testimonio” para que lo subamos a nuestra web.\nSi no te gusta cómo ha quedado, pulsa “Cancelar y repetir” y vuelve a intentarlo :)`,
+              `${t(
+                'Press “View Testimony” to view the testimony you just recorded.',
+              )}\n${t(
+                'If you are satisfied with it, click on “Save testimony“ so that we can upload it to our website.',
+              )}\n${t(
+                "If you don't like how it turned out, press “Cancel and repeat“ and try again :)",
+              )}`,
             )}
           </Text>
         </View>

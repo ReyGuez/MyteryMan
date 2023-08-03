@@ -87,7 +87,7 @@ const ScreenMessage: React.FC<ScreenMessageProps> = ({onBack, pathFinal}) => {
                       ssMode === 'portrait' ? hp('4%') : wp('10%'),
                   },
                 ]}>
-                {t('¡Tu testimonio se ha guardado con éxito!')}
+                {t('Your testimonial has been successfully saved!')}
               </Text>
               <Text
                 style={[
@@ -99,7 +99,7 @@ const ScreenMessage: React.FC<ScreenMessageProps> = ({onBack, pathFinal}) => {
                   },
                 ]}>
                 {t(
-                  'entra en www.misteryman.com/testimonios para verlo y compartirlo con tus amigos y familiares :)',
+                  'Go to www.mysteryman.com/testimonials to see it and share it with your friends and family :)',
                 )}
               </Text>
             </View>
@@ -113,7 +113,7 @@ const ScreenMessage: React.FC<ScreenMessageProps> = ({onBack, pathFinal}) => {
                   fontSize: ssMode === 'portrait' ? hp('3%') : wp('3%'),
                 },
               ]}>
-              {t('Preparando tu vídeo')}
+              {t('Preparing your video')}
             </Text>
             <ActivityIndicator
               style={styles.top}
@@ -129,9 +129,7 @@ const ScreenMessage: React.FC<ScreenMessageProps> = ({onBack, pathFinal}) => {
                   fontSize: ssMode === 'portrait' ? hp('1.8%') : wp('1.8%'),
                 },
               ]}>
-              {t(
-                'Estamos preparando en tu vídeo, una vez finalizado te indicaremos donde puedes verlo',
-              )}
+              {t('Once finished we will tell you where you can see it.')}
             </Text>
           </View>
         )}
