@@ -231,6 +231,7 @@ const Container = () => {
               // setFinalVideo(video);
             }}
             onBack={() => onAnimation(1, 1)}
+            onDeny={() => onAnimation(1, 5)}
           />
         );
       case 4:

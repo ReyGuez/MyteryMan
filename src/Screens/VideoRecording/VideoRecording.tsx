@@ -10,11 +10,20 @@ import useClock from '../../Templates/Clock';
 import {RNFFmpeg} from 'react-native-ffmpeg';
 import {useTranslation} from 'react-i18next';
 import {palette} from '../../../assets/color';
+import DeviceInfo from 'react-native-device-info';
 import React, {useEffect, useRef, useState} from 'react';
 import {useOrientation} from '../../Templates/Orientation.tsx';
 import {CameraRoll} from '@react-native-camera-roll/camera-roll';
 import {Camera, useCameraDevices} from 'react-native-vision-camera';
-import {Animated, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+  Animated,
+  Modal,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import {sendLogs} from '../../Network';
 
 export interface VideoInfo {
@@ -26,17 +35,20 @@ export interface VideoInfo {
 interface VideoRecordingProps {
   onBack: () => void;
   onGetPathVideo: (path: string) => void;
+  onDeny: () => void;
 }
 
 const VideoRecording: React.FC<VideoRecordingProps> = ({
   onBack,
   onGetPathVideo,
+  onDeny,
 }) => {
   const {t} = useTranslation();
   const ssMode = useOrientation();
   const camera = useRef<Camera>(null);
   const [, setOrientation] = useState(ssMode);
   const devices = useCameraDevices();
+  const [showModal, setShowModal] = useState(false);
   const startValue = useRef(new Animated.Value(1)).current;
   const opacity = startValue.interpolate({
     inputRange: [0, 1],
@@ -178,7 +190,7 @@ const VideoRecording: React.FC<VideoRecordingProps> = ({
               focusable
               style={styles.root}
               onInitialized={() => {
-                onStartRecording();
+                setShowModal(true);
                 onSendLogs('Camera Ready', 'Camera ready to record');
               }}
               onError={error => {
@@ -228,6 +240,101 @@ const VideoRecording: React.FC<VideoRecordingProps> = ({
           </TouchableOpacity>
         </View>
       </View>
+      <Modal
+        supportedOrientations={[
+          'landscape',
+          'portrait',
+          'landscape-left',
+          'landscape-right',
+          'portrait-upside-down',
+        ]}
+        transparent
+        visible={showModal}
+        style={styles.root}>
+        <View style={styles.modalContainer}>
+          <SafeAreaView>
+            <View style={styles.boxContainer}>
+              <View>
+                <Text
+                  style={{
+                    ...styles.titleModal,
+                    fontSize: ssMode === 'portrait' ? hp('3%') : wp('3%'),
+                  }}>
+                  {t('Advertisement')}
+                </Text>
+                <Text
+                  style={{
+                    ...styles.label,
+                    marginTop: ssMode === 'portrait' ? '5%' : '2%',
+                    fontSize: ssMode === 'portrait' ? hp('2%') : wp('2%'),
+                  }}>
+                  {t(
+                    'I am over 18 years of age and I give my express consent so that the testimonial video that is going to be recorded can be used, disseminated and shared on the social networks and website of The Mystery Man.',
+                  )}
+                </Text>
+                <View
+                  style={{
+                    marginTop: '5%',
+                    flexDirection: 'row',
+                    justifyContent: DeviceInfo.isTablet()
+                      ? 'flex-end'
+                      : ssMode === 'portrait'
+                      ? 'space-between'
+                      : 'flex-end',
+                  }}>
+                  <TouchableOpacity
+                    onPress={() => {
+                      setShowModal(false);
+                      onDeny();
+                    }}
+                    style={{
+                      backgroundColor: palette.black_2,
+                      paddingHorizontal:
+                        ssMode === 'portrait' ? hp('5%') : wp('5%'),
+                      paddingVertical:
+                        ssMode === 'portrait' ? hp('2%') : wp('1.5%'),
+                    }}>
+                    <Text
+                      style={[
+                        styles.btnLabel,
+                        {
+                          fontSize:
+                            ssMode === 'portrait' ? hp('1.8%') : wp('1.8%'),
+                        },
+                      ]}>
+                      {t('Deny')}
+                    </Text>
+                  </TouchableOpacity>
+                  <View style={{width: 10}} />
+                  <TouchableOpacity
+                    onPress={() => {
+                      setShowModal(false);
+                      onStartRecording();
+                    }}
+                    style={{
+                      backgroundColor: palette.black_2,
+                      paddingHorizontal:
+                        ssMode === 'portrait' ? hp('5%') : wp('5%'),
+                      paddingVertical:
+                        ssMode === 'portrait' ? hp('2%') : wp('1.5%'),
+                    }}>
+                    <Text
+                      style={[
+                        styles.btnLabel,
+                        {
+                          fontSize:
+                            ssMode === 'portrait' ? hp('1.8%') : wp('1.8%'),
+                        },
+                      ]}>
+                      {t('Accept')}
+                    </Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
+          </SafeAreaView>
+        </View>
+      </Modal>
     </View>
   );
 };
@@ -277,5 +384,27 @@ const styles = StyleSheet.create({
     color: palette.white_1,
     fontFamily: 'Montserrat-Bold',
     textTransform: 'uppercase',
+  },
+  modalContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  boxContainer: {
+    borderRadius: 10,
+    backgroundColor: '#FFFF',
+    marginHorizontal: '10%',
+    paddingHorizontal: 24,
+    paddingVertical: 24,
+  },
+  titleModal: {
+    lineHeight: 34,
+    textAlign: 'center',
+    fontFamily: 'Montserrat-SemiBold',
+  },
+  label: {
+    textAlign: 'justify',
+    fontFamily: 'Montserrat-Regular',
   },
 });
